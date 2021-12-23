@@ -50,5 +50,13 @@
         &__row {
             flex-direction: column;
         }
+
+        &--last {
+            .brands__column {
+                &:first-child {order: 2;}
+                &:nth-child(2) {order: 1;}
+                &:last-child {order: 3;}
+            }
+        }
     }
 }
