@@ -257,6 +257,31 @@ body {
     }
 }
 
+.block {
+    text-align: center;
+}
+
+.block__icon {
+    margin-bottom: 34px;
+}
+
+.block__title {
+    font-size: 1.125rem;
+    line-height: 189%;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #353738;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.block__text {
+    line-height: 189%;
+    color: #848789;
+    font-size: 1.125rem;
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -285,13 +310,6 @@ body {
     z-index: 5;
 }
 
-@media screen and (max-width: 756px) {
-    .header__logo {
-        position: fixed;
-        top: 35px;
-    }
-}
-
 .page {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -307,4 +325,21 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.generation {
+    background-color: #f7f7f7;
+    padding: 120px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .generation {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .generation {
+        padding: 35px 0;
+    }
 }
