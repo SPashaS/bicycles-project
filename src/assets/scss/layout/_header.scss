@@ -1,0 +1,33 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85px;
+    }
+
+    &__menu {
+        
+    }
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+
+        @media screen and (max-width: 756px) {
+            position: fixed;
+            top: 35px;
+        }
+    }
+}
+
