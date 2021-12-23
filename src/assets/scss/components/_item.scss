@@ -1,0 +1,41 @@
+.item {
+    height: 100%;
+    display: block;
+    position: relative;
+    
+    &__logo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background-color: rgba(100, 194, 158, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.8s ease 0s;
+    }
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        .item__logo {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        height: auto;
+        padding: 0px 0px 60% 0px;
+    }
+}

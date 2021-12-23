@@ -86,12 +86,13 @@
         }
     }
 }
+
 .icon {
     &__menu {
         @media (max-width:767px) {
             display: block;
-            position: absolute;
-            top: 25px;
+            position: fixed;
+            top: 45px;
             right: 10px;
             width: 30px;
             height: 18px;

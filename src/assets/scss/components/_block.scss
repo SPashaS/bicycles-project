@@ -20,5 +20,31 @@
         line-height: 189%;
         color: #848789;
         font-size: 1.125rem;
+
+        &--justify {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 188%;
+
+            &::after {
+                content: '';
+                display: block;
+                margin: 35px auto 0px ;
+                width: 50px;
+                height: 1px;
+                background-color: #ebebeb;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        &__text {
+            &--justify {
+                &::after {
+                    margin: 20px auto 0px;
+                }
+            }
+        }
+        
     }
 }
