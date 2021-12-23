@@ -23,11 +23,6 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 5;
-
-        @media screen and (max-width: 756px) {
-            position: fixed;
-            top: 35px;
-        }
     }
 }
 

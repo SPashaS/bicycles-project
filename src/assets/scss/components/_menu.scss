@@ -90,8 +90,8 @@
     &__menu {
         @media (max-width:767px) {
             display: block;
-            position: fixed;
-            top: 50px;
+            position: absolute;
+            top: 25px;
             right: 10px;
             width: 30px;
             height: 18px;

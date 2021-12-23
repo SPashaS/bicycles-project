@@ -1,0 +1,13 @@
+.generation {
+    background-color: #f7f7f7;
+    padding: 120px 0;
+    &__block {}
+
+    @media screen and (max-width: 950px) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width: 610px) {
+        padding: 35px 0;
+    }
+}
+
