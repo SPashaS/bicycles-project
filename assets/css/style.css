@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     padding: 0;
     margin: 0;
@@ -81,6 +83,57 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: 'LatoBold';
   src: url("./../../fonts/Lato-Bold.ttf");
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.slick-dots li:not(:last-child) {
+    margin-right: 9px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+    background-color: #a9afb3;
+    border: 0;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: solid 1px #c8c8c8;
+    background-color: transparent;
 }
 
 body {
@@ -458,5 +511,66 @@ body {
     .brands__row {
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .brands--last .brands__column:first-child {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .brands--last .brands__column:nth-child(2) {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .brands--last .brands__column:last-child {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+
+.slider {
+    background-color: #f7f7f7;
+    padding: 120px 0 60px;
+}
+
+.slider__item {
+    text-align: center;
+}
+
+.slider__icon {
+    margin-bottom: 35px;
+}
+
+.slider__title {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #353738;
+}
+
+.slider__title span {
+    font-weight: 300;
+    color: #848789;
+}
+
+.slider__text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 142%;
+    color: #848789;
+}
+
+@media screen and (max-width: 1500px) {
+    .slider {
+        padding: 60px 0 40px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider {
+        padding: 40px 0 30px;
     }
 }
