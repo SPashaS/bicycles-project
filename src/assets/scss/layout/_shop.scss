@@ -1,0 +1,48 @@
+.shop {
+
+    &__body {
+        display: flex;
+    }
+
+    &__column {
+        flex: 0 1 16.666%;
+
+        &--b {
+            flex: 0 1 33.333%;
+        }
+    }
+
+    &__block {
+    }
+
+    &__footer {
+    }
+}
+
+.block-shop {
+    height: 100%;
+    &__row {
+        display: flex;
+    }
+
+    &__column {
+        flex: 0 1 50%;
+    }
+
+    &__item {
+        height: auto;
+        padding: 0px 0px 50% 0px;
+
+        &logo {
+
+        }
+        
+        &--l {
+            padding: 0px 0px 100% 0px;
+        }
+
+        &--b {
+            padding: 0px 0px 200.27% 0px;
+        }
+    }
+}

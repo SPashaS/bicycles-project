@@ -29,7 +29,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 320px;
 
     & img {
         display: none;
@@ -47,3 +46,4 @@ body {
 @import './layout/generation';
 @import './layout/brands';
 @import './layout/slider';
+@import './layout/shop';

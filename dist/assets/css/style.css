@@ -97,6 +97,8 @@ h1, h2, h3, h4, h5, h6 {
 .slick-track {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 /* Слайд */
@@ -114,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .slick-dots li:not(:last-child) {
