@@ -1,0 +1,47 @@
+.slider {
+    background-color: #f7f7f7;
+    padding: 120px 0 60px;
+
+    &__body {
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__icon {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 1.125rem;
+        font-weight: 700; 
+        letter-spacing: 1.8px;
+        color: #353738;
+
+        span {
+            font-weight: 300;
+            color: #848789; 
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 142%;
+        color: #848789;
+    }
+
+    @media screen and (max-width: 1500px) {
+        padding: 60px 0 40px;
+    
+    }
+
+    @media screen and (max-width: 1100px) {
+        padding: 40px 0 30px;
+    }
+
+}
+

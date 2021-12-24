@@ -1,5 +1,6 @@
 @import './base/reset';
 @import './base/fonts';
+@import './base/slick-slider';
 @import './abstracts/mixins';
 @import './abstracts/vars';
 
@@ -45,3 +46,4 @@ body {
 @import './layout/main-page';
 @import './layout/generation';
 @import './layout/brands';
+@import './layout/slider';
