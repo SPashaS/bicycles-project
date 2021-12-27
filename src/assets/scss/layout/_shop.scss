@@ -16,6 +16,43 @@
     }
 
     &__footer {
+        background-color: #282f35;
+        padding: 75px 0;
+        text-align: center;
+    }
+
+    &__button {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        padding: 20px 55px;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 1100px) {
+        &__body {
+            flex-wrap: wrap;
+        }
+
+        &__column {
+            flex: 0 1 50%;
+
+            &:first-child,
+            &:last-child {
+                flex: 1 1 100%;
+            }
+        }
+
+        &__footer {
+            padding: 55px 0;
+        }
+    
+        &__button {
+            padding: 20px 30px;
+        }
     }
 }
 

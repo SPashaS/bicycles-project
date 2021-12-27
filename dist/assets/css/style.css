@@ -167,7 +167,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 320px;
 }
 
 ._ibg img {
@@ -373,6 +372,8 @@ body {
     left: 0;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
@@ -382,6 +383,15 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.8s ease 0s;
+}
+
+.item__logo span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 15px;
 }
 
 .item__image {
@@ -576,4 +586,46 @@ body {
     .slider {
         padding: 40px 0 30px;
     }
+}
+
+.shop__body {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.shop__column {
+    -ms-flex: 0 1 16.666%;
+    flex: 0 1 16.666%;
+}
+
+.shop__column--b {
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+}
+
+.block-shop {
+    height: 100%;
+}
+
+.block-shop__row {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.block-shop__column {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+}
+
+.block-shop__item {
+    height: auto;
+    padding: 0px 0px 50% 0px;
+}
+
+.block-shop__item--l {
+    padding: 0px 0px 100% 0px;
+}
+
+.block-shop__item--b {
+    padding: 0px 0px 200.27% 0px;
 }
