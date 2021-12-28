@@ -262,7 +262,7 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .icon__menu {
         display: block;
         position: fixed;
@@ -694,4 +694,55 @@ body {
 .subscribe__form {
     display: -ms-flexbox;
     display: flex;
+}
+
+.subscribe__input {
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    padding: 0px 8px 0px 0px;
+}
+
+.subscribe__input input {
+    border: solid 1px #d3d7d9;
+    width: 100%;
+    height: 69px;
+    background-color: #fff;
+    padding: 0px 28px;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 120%;
+    color: #929292;
+}
+
+.subscribe__button {
+    -ms-flex: 0 0 126px;
+    flex: 0 0 126px;
+}
+
+.subscribe__btn {
+    background-color: #64c29e;
+    width: 100%;
+    height: 69px;
+    line-height: 69px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe__body {
+        padding: 60px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subscribe__form {
+        display: block;
+    }
+
+    .subscribe__input {
+        padding: 0px 0px 8px 0px;
+    }
 }
