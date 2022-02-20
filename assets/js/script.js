@@ -14,11 +14,8 @@ ibg();
 // MENU
 function menuBurger() {
     let menuIcon = document.querySelector('.icon__menu');
-    let menuBody = document.querySelector('.menu__body');
-
     menuIcon.addEventListener('click', function() {
-        menuBody.classList.toggle('menu__body--active')
-        menuIcon.classList.toggle('icon__menu--active')
+        document.documentElement.classList.toggle('_menu-open');
     })
 }
 menuBurger();
