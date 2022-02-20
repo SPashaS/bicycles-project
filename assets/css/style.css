@@ -449,6 +449,7 @@ body {
     transform: translate(-50%);
     background-color: #4d4959;
     z-index: 4;
+    transition: left 0.3s ease 0s;
 }
 
 ._menu-open .header__row::before {

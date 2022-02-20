@@ -168,7 +168,11 @@ body {
   letter-spacing: 2.6px;
   text-align: left;
   color: #4d4959;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: color 0.3s ease 0s; }
+  @media (any-hover: hover) {
+    .menu__link:hover {
+      color: #64c29e; } }
 
 @media screen and (max-width: 767px) {
   .menu__body {
@@ -448,7 +452,12 @@ body {
   font-weight: 700;
   letter-spacing: 2.8px;
   padding: 20px 55px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s; }
+  @media (any-hover: hover) {
+    .shop__button:hover {
+      border: 1px solid #64c29e;
+      color: #64c29e; } }
 
 @media screen and (max-width: 1100px) {
   .shop__body {
@@ -521,7 +530,13 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  transition: all 0.3s ease 0s; }
+  @media (any-hover: hover) {
+    .subscribe__btn:hover {
+      color: #64c29e;
+      background-color: #fff;
+      border: 2px solid #64c29e; } }
 
 @media screen and (max-width: 767px) {
   .subscribe__body {
